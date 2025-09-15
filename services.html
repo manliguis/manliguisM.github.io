@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Express | Services</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+    header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 3px;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+}
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 10px; /* prevent cut-off */
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a.active {
+  text-decoration: underline;
+}
+nav a:hover {
+  color: #ffcc00; /* highlight hover */
+}
+    /* Services specific styling */
+    .services-hero {
+      height: 50vh;
+      background: url('background.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      text-align: center;
+    }
+    .services-hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .services-hero h1 {
+      font-size: 48px;
+      z-index: 2;
+      position: relative;
+    }
+    .services-list {
+      background: #006b87; /* blue section */
+      color: white;
+      padding: 50px;
+    }
+    .services-list ul {
+      list-style: square;
+      font-size: 18px;
+      line-height: 2;
+    }
+    .services-list li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Print Express</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="products.html">Products</a>
+      <a href="staffs.html">Staffs</a> 
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="services-hero">
+    <h1>Services</h1>
+  </section>
+
+  <!-- Services List -->
+  <section class="services-list">
+    <ul>
+      
+      <li>Tarpaulin Printing</li>
+      <li>Business Cards</li>
+      <li>T-shirt Printing</li>
+    </ul>
+  </section>
+</body>
+</html>
